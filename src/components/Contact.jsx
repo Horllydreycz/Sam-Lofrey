@@ -2,8 +2,8 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="border border-amber-50 rounded-2xl bg-cover bg-center bg-no-repeat min-h-screen bg-[#0A1F44]">
-      <div className="h-screen w-full">
+    <div className="w-full border border-amber-50 rounded-2xl bg-cover bg-center bg-no-repeat min-h-screen bg-[#0A1F44]">
+      <div className="min-h-screen w-full">
         <div className="bg-[#B7950B] border rounded-t-2xl border-amber-50 flex justify-center py-5 font-bold text-xl text-white">
           GET 10% OFF
         </div>
