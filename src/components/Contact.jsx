@@ -19,7 +19,7 @@ function Contact() {
               <span className="text-xs">0</span>
             </div>
           </div>
-          <div className="mt-4 flex items-center justify-center gap-5 text-sm font-semibold">
+          <div className="mt-4 flex items-center justify-start gap-5 text-sm font-semibold">
             <nav>Home</nav>
             <nav>Shop</nav>
             <nav>News</nav>
