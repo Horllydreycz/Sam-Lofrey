@@ -34,11 +34,7 @@ function Contact() {
             <nav>Contact</nav>
           </div>
           <div className="absolute left-1/2 -translate-x-1/2">
-            <img
-              src="src/assets/sam_lofrey_logo.jpg"
-              alt="Logo"
-              className="h-16 w-auto"
-            />
+            <img src={logo} alt="Logo" className="h-16 w-auto" />
           </div>
           <div className="flex gap-6 items-center font-semibold text-white">
             <span>Search</span>
