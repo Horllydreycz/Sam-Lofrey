@@ -8,7 +8,8 @@ function Contact() {
           GET 10% OFF
         </div>
         <div className="md:hidden px-4 py-4 bg-transparent text-white">
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-between relative">
+            <div></div>
             <img src={logo} alt="Logo" className="h-12 w-auto" />
             <div className="flex items-center gap-3 font-semibold">
               <span className="text-xs">Search</span>
