@@ -17,13 +17,13 @@ function ContactSection() {
           </p>
 
           <a
-            href="https://instagram.com/samlofrey123"
+            href="https://instagram.com/samlofrey"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-navy text-ivory font-body text-xs tracking-[0.2em] uppercase font-semibold hover:bg-navy/90 transition-all duration-300"
+            className="border rounded-xl inline-flex items-center gap-3 px-8 py-4 bg-navy text-ivory font-body text-xs tracking-[0.2em] uppercase font-semibold hover:bg-navy/90 transition-all duration-300"
           >
             <Instagram size={18} />
-            @samlofrey123
+            @samlofrey
           </a>
 
           <p className="mt-8 font-body text-sm text-charcoal/40">

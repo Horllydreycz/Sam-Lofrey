@@ -11,7 +11,7 @@ function AboutSection() {
               <img
                 src={craftImage}
                 alt="Sam Lofrey craftsmanship detail"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 border rounded-xl"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-gold/30 -z-10" />
@@ -33,24 +33,24 @@ function AboutSection() {
               </p>
               <p>
                 From sharp corporate wear to sleek casual fits, and regal
-                traditional wear like Agbada and Senators — every stitch is a
+                traditional wear like Agbada and Senators, every stitch is a
                 statement of quality and style, made for men who appreciate the
                 art of dressing well.
               </p>
             </div>
 
             {/* Values */}
-            <div className="mt-10 grid grid-cols-3 gap-6">
+            <div className="mt-20 grid grid-cols-3 gap-6">
               {[
                 { label: "Refined", desc: "Elegance in every detail" },
                 { label: "Confident", desc: "Poise that commands" },
                 { label: "Heritage", desc: "Honoring tradition" },
               ].map((v) => (
                 <div key={v.label} className="border-t-2 border-gold/30 pt-4">
-                  <h4 className="font-display text-lg font-semibold text-navy">
+                  <h4 className="font-display text-xl font-semibold text-navy">
                     {v.label}
                   </h4>
-                  <p className="font-body text-xs text-charcoal/50 mt-1">
+                  <p className="font-body text-small text-charcoal/50 mt-1">
                     {v.desc}
                   </p>
                 </div>
