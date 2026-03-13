@@ -44,13 +44,13 @@ function HeroSection() {
           <div className="flex gap-4">
             <a
               href="#collections"
-              className="inline-flex items-center px-8 py-4 bg-gold text-navy font-body text-xs tracking-[0.2em] uppercase font-semibold hover:bg-gold/90 transition-all duration-300"
+              className="border rounded-xl border-gold/90 inline-flex items-center px-8 py-4 bg-gold text-navy font-body text-xs tracking-[0.2em] uppercase font-semibold hover:bg-gold/90 transition-all duration-300"
             >
               View Collections
             </a>
             <a
               href="#about"
-              className="inline-flex items-center px-8 py-4 border border-ivory/30 text-ivory font-body text-xs tracking-[0.2em] uppercase hover:border-gold hover:text-gold transition-all duration-300"
+              className="border rounded-xl inline-flex items-center px-8 py-4  border-ivory/30 text-ivory font-body text-xs tracking-[0.2em] uppercase hover:border-gold hover:text-gold transition-all duration-300"
             >
               Our Story
             </a>
