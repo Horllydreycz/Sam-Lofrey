@@ -1,14 +1,19 @@
-import heroImage from "../assets/hero-main.jpg";
+import Image from "next/image";
+import heroImage from "@/assets/hero-main.jpg";
 
 function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src={heroImage}
           alt="Sam Lofrey luxury menswear"
-          className="w-full h-full object-cover object-top"
+          fill
+          priority
+          placeholder="blur"
+          sizes="100vw"
+          className="object-cover object-top"
         />
         <div
           className="absolute inset-0"

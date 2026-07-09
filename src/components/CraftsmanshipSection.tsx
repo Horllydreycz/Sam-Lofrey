@@ -1,4 +1,5 @@
-import heroAgbada from "../assets/agbada.jpg";
+import Image from "next/image";
+import heroAgbada from "@/assets/agbada.jpg";
 
 function CraftsmanshipSection() {
   return (
@@ -8,10 +9,13 @@ function CraftsmanshipSection() {
     >
       {/* Background */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src={heroAgbada}
           alt="Craftsmanship"
-          className="w-full h-full object-cover"
+          fill
+          placeholder="blur"
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-navy/85" />
       </div>
@@ -34,8 +38,8 @@ function CraftsmanshipSection() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto">
             {[
-              { number: "15+", label: "Years of Craft" },
-              { number: "500+", label: "Bespoke Pieces" },
+              { number: "7+", label: "Years of Craft" },
+              { number: "100+", label: "Bespoke Pieces" },
               { number: "100%", label: "Hand-Finished" },
             ].map((stat) => (
               <div key={stat.label}>

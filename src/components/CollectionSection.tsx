@@ -1,6 +1,7 @@
-import collectionCorporate from "../assets/corporate.jpg";
-import collectionCasual from "../assets/casual.jpg";
-import collectionGold from "../assets/gold.jpg";
+import Image from "next/image";
+import collectionCorporate from "@/assets/corporate.jpg";
+import collectionCasual from "@/assets/casual.jpg";
+import collectionGold from "@/assets/gold.jpg";
 
 const collections = [
   {
@@ -48,11 +49,14 @@ const CollectionsSection = () => {
               className="group relative overflow-hidden cursor-pointer"
               style={{ animationDelay: `${i * 0.2}s` }}
             >
-              <div className="aspect-3/4 overflow-hidden">
-                <img
+              <div className="relative aspect-3/4 overflow-hidden">
+                <Image
                   src={col.image}
                   alt={col.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  fill
+                  placeholder="blur"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
               {/* Overlay */}

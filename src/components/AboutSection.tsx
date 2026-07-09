@@ -1,4 +1,5 @@
-import craftImage from "../assets/craftmanship detail.jpg";
+import Image from "next/image";
+import craftImage from "@/assets/craftsmanship-detail.jpg";
 
 function AboutSection() {
   return (
@@ -7,11 +8,14 @@ function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="aspect-square overflow-hidden">
-              <img
+            <div className="relative aspect-square overflow-hidden">
+              <Image
                 src={craftImage}
                 alt="Sam Lofrey craftsmanship detail"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 border rounded-xl"
+                fill
+                placeholder="blur"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover hover:scale-105 transition-transform duration-700 border rounded-xl"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-gold/30 -z-10" />

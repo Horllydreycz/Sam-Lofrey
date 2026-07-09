@@ -1,6 +1,9 @@
+"use client";
+
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/sam_lofrey_logo.jpg";
+import logo from "@/assets/sam_lofrey_logo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +14,12 @@ function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <img src={logo} alt="Sam Lofrey logo" className="h-20 w-auto" />
+            <Image
+              src={logo}
+              alt="Sam Lofrey logo"
+              className="h-20 w-auto"
+              priority
+            />
             <span className="font-display text-2xl font-bold text-ivory tracking-wide">
               Sam Lofrey
             </span>
